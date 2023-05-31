@@ -1,0 +1,6 @@
+admin pass
+robey foo
+root root
+admin admin
+root admin
+admin root
