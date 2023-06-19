@@ -119,9 +119,9 @@ def print_group_table():
                 elif "Comment:" in line and i < len(lines) - 1:
                     comment = lines[i + 1].strip()  # Get the comment from the next line
             
-            colored_group = colorize_column(group, False, Fore.YELLOW)
-            colored_comment = colorize_column(comment, False, Fore.CYAN)
-            colored_users = colorize_column(users, False, Fore.GREEN)
+            colored_group = colorize_column(group, True, Fore.YELLOW)
+            colored_comment = colorize_column(comment, True, Fore.CYAN)
+            colored_users = colorize_column(users, True, Fore.GREEN)
             
             group_table.add_row([colored_group, colored_comment, colored_users])
         
